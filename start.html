@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>student login</title>
+</head>
+<body>
+<h1 align=center> STUDENT LOGIN FORM </h1>
+<form action="/cgi-bin/submit.cgi" method="post">
+	Student Name:
+	<input type="text" name="Login" size=25>
+	<br>
+	Password:
+	<input type="password" name="pass" size=20>
+	<br>
+	Date of Birth:
+	<input type="text" name="login" size=15>
+	<br>
+	Sex:F
+	<input type="radio" name="sex" value="F" CHECKED>
+	M
+	<input type="radio" name="sex" value="M">
+	<br>
+	<br>
+	<p> choose the department
+		<select> name="cource"
+			<option> Computer science engineering </option>
+		    <option> Mechanical engineering </option>
+		    <option> Electical elecranics engineering </option>
+			<option> Electrical communication engineering </option>
+		</select>
+		
+		<input type="button" value="Check" onclick="validate()">
+		<br>
+		<input type="submit" value="Login" onclick="submit()">
+		<input type="reset" value="Clear" onclick="clear">
+	</p></form>
+</body>
+</html>
